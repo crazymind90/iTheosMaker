@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C2E4A08244268A4007B5627 /* iTheosP.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C2E4A07244268A4007B5627 /* iTheosP.plist */; };
+		5C2E4A0C244275DA007B5627 /* TheosOrig.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5C2E4A0B244275DA007B5627 /* TheosOrig.zip */; };
+		5C4EEED724461BE3001B64E7 /* TheosPref.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5C4EEED624461BE3001B64E7 /* TheosPref.zip */; };
+		5C9696882442518000916832 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9696872442518000916832 /* AppDelegate.m */; };
+		5C96968B2442518000916832 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C96968A2442518000916832 /* ViewController.m */; };
+		5C96968D2442518100916832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C96968C2442518100916832 /* Assets.xcassets */; };
+		5C9696902442518100916832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C96968E2442518100916832 /* Main.storyboard */; };
+		5C9696932442518100916832 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9696922442518100916832 /* main.m */; };
+		5C96969E2442518100916832 /* iTheosMACkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C96969D2442518100916832 /* iTheosMACkerTests.m */; };
+		5C9696A92442518100916832 /* iTheosMACkerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9696A82442518100916832 /* iTheosMACkerUITests.m */; };
+		5CACBC9424B1DCEB00110785 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC6E24B1DCEB00110785 /* crypt.c */; };
+		5CACBC9524B1DCEB00110785 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC6F24B1DCEB00110785 /* unzip.c */; };
+		5CACBC9624B1DCEB00110785 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC7024B1DCEB00110785 /* zip.c */; };
+		5CACBC9724B1DCEB00110785 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC7224B1DCEB00110785 /* ioapi.c */; };
+		5CACBC9824B1DCEB00110785 /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC7424B1DCEB00110785 /* ioapi_buf.c */; };
+		5CACBC9924B1DCEB00110785 /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC7824B1DCEB00110785 /* ioapi_mem.c */; };
+		5CACBC9A24B1DCEB00110785 /* minishared.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC7924B1DCEB00110785 /* minishared.c */; };
+		5CACBC9B24B1DCEB00110785 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC7F24B1DCEB00110785 /* aeskey.c */; };
+		5CACBC9C24B1DCEB00110785 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC8024B1DCEB00110785 /* hmac.c */; };
+		5CACBC9D24B1DCEB00110785 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC8324B1DCEB00110785 /* aescrypt.c */; };
+		5CACBC9E24B1DCEB00110785 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC8424B1DCEB00110785 /* fileenc.c */; };
+		5CACBC9F24B1DCEB00110785 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC8624B1DCEB00110785 /* sha1.c */; };
+		5CACBCA024B1DCEB00110785 /* aes_ni.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC8924B1DCEB00110785 /* aes_ni.c */; };
+		5CACBCA124B1DCEB00110785 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC8B24B1DCEB00110785 /* prng.c */; };
+		5CACBCA224B1DCEB00110785 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC8D24B1DCEB00110785 /* pwd2key.c */; };
+		5CACBCA324B1DCEB00110785 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC8E24B1DCEB00110785 /* aestab.c */; };
+		5CACBCA424B1DCEB00110785 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CACBC9324B1DCEB00110785 /* SSZipArchive.m */; };
+		5CAD513E24A46C0400AFD7ED /* TheosJailed.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5CAD513D24A46C0400AFD7ED /* TheosJailed.zip */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C96969A2442518100916832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C96967B2442518000916832 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C9696822442518000916832;
+			remoteInfo = iTheosMACker;
+		};
+		5C9696A52442518100916832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C96967B2442518000916832 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C9696822442518000916832;
+			remoteInfo = iTheosMACker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C2E4A07244268A4007B5627 /* iTheosP.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iTheosP.plist; sourceTree = "<group>"; };
+		5C2E4A0B244275DA007B5627 /* TheosOrig.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = TheosOrig.zip; sourceTree = "<group>"; };
+		5C4EEED624461BE3001B64E7 /* TheosPref.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = TheosPref.zip; sourceTree = "<group>"; };
+		5C9696832442518000916832 /* iTheosMACker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTheosMACker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9696862442518000916832 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C9696872442518000916832 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C9696892442518000916832 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5C96968A2442518000916832 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5C96968C2442518100916832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C96968F2442518100916832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C9696912442518100916832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C9696922442518100916832 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C9696942442518100916832 /* iTheosMACker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iTheosMACker.entitlements; sourceTree = "<group>"; };
+		5C9696992442518100916832 /* iTheosMACkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTheosMACkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C96969D2442518100916832 /* iTheosMACkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTheosMACkerTests.m; sourceTree = "<group>"; };
+		5C96969F2442518100916832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C9696A42442518100916832 /* iTheosMACkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTheosMACkerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9696A82442518100916832 /* iTheosMACkerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTheosMACkerUITests.m; sourceTree = "<group>"; };
+		5C9696AA2442518100916832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CACBC6C24B1DCEB00110785 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		5CACBC6E24B1DCEB00110785 /* crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
+		5CACBC6F24B1DCEB00110785 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		5CACBC7024B1DCEB00110785 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		5CACBC7124B1DCEB00110785 /* minishared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minishared.h; sourceTree = "<group>"; };
+		5CACBC7224B1DCEB00110785 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		5CACBC7324B1DCEB00110785 /* ioapi_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_mem.h; sourceTree = "<group>"; };
+		5CACBC7424B1DCEB00110785 /* ioapi_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_buf.c; sourceTree = "<group>"; };
+		5CACBC7524B1DCEB00110785 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		5CACBC7624B1DCEB00110785 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		5CACBC7724B1DCEB00110785 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		5CACBC7824B1DCEB00110785 /* ioapi_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_mem.c; sourceTree = "<group>"; };
+		5CACBC7924B1DCEB00110785 /* minishared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minishared.c; sourceTree = "<group>"; };
+		5CACBC7A24B1DCEB00110785 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		5CACBC7B24B1DCEB00110785 /* ioapi_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_buf.h; sourceTree = "<group>"; };
+		5CACBC7D24B1DCEB00110785 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		5CACBC7E24B1DCEB00110785 /* aes_ni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_ni.h; sourceTree = "<group>"; };
+		5CACBC7F24B1DCEB00110785 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		5CACBC8024B1DCEB00110785 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		5CACBC8124B1DCEB00110785 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		5CACBC8224B1DCEB00110785 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		5CACBC8324B1DCEB00110785 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		5CACBC8424B1DCEB00110785 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		5CACBC8524B1DCEB00110785 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		5CACBC8624B1DCEB00110785 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		5CACBC8724B1DCEB00110785 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		5CACBC8824B1DCEB00110785 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		5CACBC8924B1DCEB00110785 /* aes_ni.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_ni.c; sourceTree = "<group>"; };
+		5CACBC8A24B1DCEB00110785 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		5CACBC8B24B1DCEB00110785 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		5CACBC8C24B1DCEB00110785 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		5CACBC8D24B1DCEB00110785 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		5CACBC8E24B1DCEB00110785 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		5CACBC8F24B1DCEB00110785 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		5CACBC9024B1DCEB00110785 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		5CACBC9124B1DCEB00110785 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		5CACBC9224B1DCEB00110785 /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		5CACBC9324B1DCEB00110785 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		5CAD513D24A46C0400AFD7ED /* TheosJailed.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = TheosJailed.zip; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C9696802442518000916832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C9696962442518100916832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C9696A12442518100916832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C96967A2442518000916832 = {
+			isa = PBXGroup;
+			children = (
+				5C9696852442518000916832 /* iTheosMACker */,
+				5C96969C2442518100916832 /* iTheosMACkerTests */,
+				5C9696A72442518100916832 /* iTheosMACkerUITests */,
+				5C9696842442518000916832 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C9696842442518000916832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C9696832442518000916832 /* iTheosMACker.app */,
+				5C9696992442518100916832 /* iTheosMACkerTests.xctest */,
+				5C9696A42442518100916832 /* iTheosMACkerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C9696852442518000916832 /* iTheosMACker */ = {
+			isa = PBXGroup;
+			children = (
+				5CACBC6B24B1DCEB00110785 /* SSZipArchive */,
+				5C4EEED624461BE3001B64E7 /* TheosPref.zip */,
+				5C2E4A0B244275DA007B5627 /* TheosOrig.zip */,
+				5CAD513D24A46C0400AFD7ED /* TheosJailed.zip */,
+				5C2E4A07244268A4007B5627 /* iTheosP.plist */,
+				5C9696862442518000916832 /* AppDelegate.h */,
+				5C9696872442518000916832 /* AppDelegate.m */,
+				5C9696892442518000916832 /* ViewController.h */,
+				5C96968A2442518000916832 /* ViewController.m */,
+				5C96968C2442518100916832 /* Assets.xcassets */,
+				5C96968E2442518100916832 /* Main.storyboard */,
+				5C9696912442518100916832 /* Info.plist */,
+				5C9696922442518100916832 /* main.m */,
+				5C9696942442518100916832 /* iTheosMACker.entitlements */,
+			);
+			path = iTheosMACker;
+			sourceTree = "<group>";
+		};
+		5C96969C2442518100916832 /* iTheosMACkerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C96969D2442518100916832 /* iTheosMACkerTests.m */,
+				5C96969F2442518100916832 /* Info.plist */,
+			);
+			path = iTheosMACkerTests;
+			sourceTree = "<group>";
+		};
+		5C9696A72442518100916832 /* iTheosMACkerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C9696A82442518100916832 /* iTheosMACkerUITests.m */,
+				5C9696AA2442518100916832 /* Info.plist */,
+			);
+			path = iTheosMACkerUITests;
+			sourceTree = "<group>";
+		};
+		5CACBC6B24B1DCEB00110785 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				5CACBC6C24B1DCEB00110785 /* ZipArchive.h */,
+				5CACBC6D24B1DCEB00110785 /* minizip */,
+				5CACBC9124B1DCEB00110785 /* SSZipArchive.h */,
+				5CACBC9224B1DCEB00110785 /* SSZipCommon.h */,
+				5CACBC9324B1DCEB00110785 /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		5CACBC6D24B1DCEB00110785 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				5CACBC6E24B1DCEB00110785 /* crypt.c */,
+				5CACBC6F24B1DCEB00110785 /* unzip.c */,
+				5CACBC7024B1DCEB00110785 /* zip.c */,
+				5CACBC7124B1DCEB00110785 /* minishared.h */,
+				5CACBC7224B1DCEB00110785 /* ioapi.c */,
+				5CACBC7324B1DCEB00110785 /* ioapi_mem.h */,
+				5CACBC7424B1DCEB00110785 /* ioapi_buf.c */,
+				5CACBC7524B1DCEB00110785 /* crypt.h */,
+				5CACBC7624B1DCEB00110785 /* zip.h */,
+				5CACBC7724B1DCEB00110785 /* unzip.h */,
+				5CACBC7824B1DCEB00110785 /* ioapi_mem.c */,
+				5CACBC7924B1DCEB00110785 /* minishared.c */,
+				5CACBC7A24B1DCEB00110785 /* ioapi.h */,
+				5CACBC7B24B1DCEB00110785 /* ioapi_buf.h */,
+				5CACBC7C24B1DCEB00110785 /* aes */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		5CACBC7C24B1DCEB00110785 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				5CACBC7D24B1DCEB00110785 /* prng.h */,
+				5CACBC7E24B1DCEB00110785 /* aes_ni.h */,
+				5CACBC7F24B1DCEB00110785 /* aeskey.c */,
+				5CACBC8024B1DCEB00110785 /* hmac.c */,
+				5CACBC8124B1DCEB00110785 /* aestab.h */,
+				5CACBC8224B1DCEB00110785 /* pwd2key.h */,
+				5CACBC8324B1DCEB00110785 /* aescrypt.c */,
+				5CACBC8424B1DCEB00110785 /* fileenc.c */,
+				5CACBC8524B1DCEB00110785 /* aesopt.h */,
+				5CACBC8624B1DCEB00110785 /* sha1.c */,
+				5CACBC8724B1DCEB00110785 /* brg_types.h */,
+				5CACBC8824B1DCEB00110785 /* hmac.h */,
+				5CACBC8924B1DCEB00110785 /* aes_ni.c */,
+				5CACBC8A24B1DCEB00110785 /* brg_endian.h */,
+				5CACBC8B24B1DCEB00110785 /* prng.c */,
+				5CACBC8C24B1DCEB00110785 /* aes.h */,
+				5CACBC8D24B1DCEB00110785 /* pwd2key.c */,
+				5CACBC8E24B1DCEB00110785 /* aestab.c */,
+				5CACBC8F24B1DCEB00110785 /* sha1.h */,
+				5CACBC9024B1DCEB00110785 /* fileenc.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C9696822442518000916832 /* iTheosMACker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C9696AD2442518100916832 /* Build configuration list for PBXNativeTarget "iTheosMACker" */;
+			buildPhases = (
+				5C96967F2442518000916832 /* Sources */,
+				5C9696802442518000916832 /* Frameworks */,
+				5C9696812442518000916832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTheosMACker;
+			productName = iTheosMACker;
+			productReference = 5C9696832442518000916832 /* iTheosMACker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C9696982442518100916832 /* iTheosMACkerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C9696B02442518100916832 /* Build configuration list for PBXNativeTarget "iTheosMACkerTests" */;
+			buildPhases = (
+				5C9696952442518100916832 /* Sources */,
+				5C9696962442518100916832 /* Frameworks */,
+				5C9696972442518100916832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C96969B2442518100916832 /* PBXTargetDependency */,
+			);
+			name = iTheosMACkerTests;
+			productName = iTheosMACkerTests;
+			productReference = 5C9696992442518100916832 /* iTheosMACkerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C9696A32442518100916832 /* iTheosMACkerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C9696B32442518100916832 /* Build configuration list for PBXNativeTarget "iTheosMACkerUITests" */;
+			buildPhases = (
+				5C9696A02442518100916832 /* Sources */,
+				5C9696A12442518100916832 /* Frameworks */,
+				5C9696A22442518100916832 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C9696A62442518100916832 /* PBXTargetDependency */,
+			);
+			name = iTheosMACkerUITests;
+			productName = iTheosMACkerUITests;
+			productReference = 5C9696A42442518100916832 /* iTheosMACkerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C96967B2442518000916832 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = iTheosMACker;
+				TargetAttributes = {
+					5C9696822442518000916832 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					5C9696982442518100916832 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 5C9696822442518000916832;
+					};
+					5C9696A32442518100916832 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 5C9696822442518000916832;
+					};
+				};
+			};
+			buildConfigurationList = 5C96967E2442518000916832 /* Build configuration list for PBXProject "iTheosMACker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C96967A2442518000916832;
+			productRefGroup = 5C9696842442518000916832 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C9696822442518000916832 /* iTheosMACker */,
+				5C9696982442518100916832 /* iTheosMACkerTests */,
+				5C9696A32442518100916832 /* iTheosMACkerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C9696812442518000916832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C96968D2442518100916832 /* Assets.xcassets in Resources */,
+				5C9696902442518100916832 /* Main.storyboard in Resources */,
+				5C4EEED724461BE3001B64E7 /* TheosPref.zip in Resources */,
+				5CAD513E24A46C0400AFD7ED /* TheosJailed.zip in Resources */,
+				5C2E4A0C244275DA007B5627 /* TheosOrig.zip in Resources */,
+				5C2E4A08244268A4007B5627 /* iTheosP.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C9696972442518100916832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C9696A22442518100916832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C96967F2442518000916832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CACBCA124B1DCEB00110785 /* prng.c in Sources */,
+				5CACBCA324B1DCEB00110785 /* aestab.c in Sources */,
+				5CACBC9C24B1DCEB00110785 /* hmac.c in Sources */,
+				5CACBC9524B1DCEB00110785 /* unzip.c in Sources */,
+				5C96968B2442518000916832 /* ViewController.m in Sources */,
+				5CACBCA424B1DCEB00110785 /* SSZipArchive.m in Sources */,
+				5CACBC9E24B1DCEB00110785 /* fileenc.c in Sources */,
+				5CACBC9F24B1DCEB00110785 /* sha1.c in Sources */,
+				5CACBC9724B1DCEB00110785 /* ioapi.c in Sources */,
+				5CACBC9B24B1DCEB00110785 /* aeskey.c in Sources */,
+				5CACBC9824B1DCEB00110785 /* ioapi_buf.c in Sources */,
+				5CACBC9924B1DCEB00110785 /* ioapi_mem.c in Sources */,
+				5C9696932442518100916832 /* main.m in Sources */,
+				5CACBC9624B1DCEB00110785 /* zip.c in Sources */,
+				5CACBC9A24B1DCEB00110785 /* minishared.c in Sources */,
+				5C9696882442518000916832 /* AppDelegate.m in Sources */,
+				5CACBCA224B1DCEB00110785 /* pwd2key.c in Sources */,
+				5CACBC9D24B1DCEB00110785 /* aescrypt.c in Sources */,
+				5CACBC9424B1DCEB00110785 /* crypt.c in Sources */,
+				5CACBCA024B1DCEB00110785 /* aes_ni.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C9696952442518100916832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C96969E2442518100916832 /* iTheosMACkerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C9696A02442518100916832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C9696A92442518100916832 /* iTheosMACkerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C96969B2442518100916832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C9696822442518000916832 /* iTheosMACker */;
+			targetProxy = 5C96969A2442518100916832 /* PBXContainerItemProxy */;
+		};
+		5C9696A62442518100916832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C9696822442518000916832 /* iTheosMACker */;
+			targetProxy = 5C9696A52442518100916832 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C96968E2442518100916832 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C96968F2442518100916832 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C9696AB2442518100916832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5C9696AC2442518100916832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5C9696AE2442518100916832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iTheosMACker/iTheosMACker.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MR744P7K33;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = iTheosMACker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrazyMind90.iTheosMACker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5C9696AF2442518100916832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iTheosMACker/iTheosMACker.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MR744P7K33;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = iTheosMACker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrazyMind90.iTheosMACker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5C9696B12442518100916832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F6A69KK4NF;
+				INFOPLIST_FILE = iTheosMACkerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrazyMind90.iTheosMACker.iTheosMACkerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTheosMACker.app/Contents/MacOS/iTheosMACker";
+			};
+			name = Debug;
+		};
+		5C9696B22442518100916832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F6A69KK4NF;
+				INFOPLIST_FILE = iTheosMACkerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrazyMind90.iTheosMACker.iTheosMACkerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTheosMACker.app/Contents/MacOS/iTheosMACker";
+			};
+			name = Release;
+		};
+		5C9696B42442518100916832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F6A69KK4NF;
+				INFOPLIST_FILE = iTheosMACkerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrazyMind90.iTheosMACker.iTheosMACkerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iTheosMACker;
+			};
+			name = Debug;
+		};
+		5C9696B52442518100916832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F6A69KK4NF;
+				INFOPLIST_FILE = iTheosMACkerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrazyMind90.iTheosMACker.iTheosMACkerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iTheosMACker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C96967E2442518000916832 /* Build configuration list for PBXProject "iTheosMACker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9696AB2442518100916832 /* Debug */,
+				5C9696AC2442518100916832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C9696AD2442518100916832 /* Build configuration list for PBXNativeTarget "iTheosMACker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9696AE2442518100916832 /* Debug */,
+				5C9696AF2442518100916832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C9696B02442518100916832 /* Build configuration list for PBXNativeTarget "iTheosMACkerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9696B12442518100916832 /* Debug */,
+				5C9696B22442518100916832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C9696B32442518100916832 /* Build configuration list for PBXNativeTarget "iTheosMACkerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C9696B42442518100916832 /* Debug */,
+				5C9696B52442518100916832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C96967B2442518000916832 /* Project object */;
+}
