@@ -5,5 +5,5 @@ Supports MacOS 10.10 or later
 
 ### ScreenShot
  
-<img src="https://j.top4top.io/p_1688ee61n1.png" width="1000"/> 
+<img src="https://b.top4top.io/p_1688hvygp1.png" width="1000"/> 
 <img src="https://raw.githubusercontent.com/crazymind90
